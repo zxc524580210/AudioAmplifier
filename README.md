@@ -4,3 +4,5 @@ Inspired by the Google Voice Amplifier project. https://play.google.com/store/ap
 
 Implemented an iOS version.
 
+Note:
+Need to wear headphones
