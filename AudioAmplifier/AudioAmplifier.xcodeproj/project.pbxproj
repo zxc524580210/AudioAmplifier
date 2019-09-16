@@ -21,6 +21,7 @@
 		8B5B8C38232A2124009BE7E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5B8C37232A2124009BE7E2 /* AVFoundation.framework */; };
 		8BF54497232F3EB300845DC7 /* libAgAGC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF54496232F3EB300845DC7 /* libAgAGC.a */; };
 		8BF544A4232F653F00845DC7 /* AudioAgcProcess.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BF544A3232F653F00845DC7 /* AudioAgcProcess.mm */; };
+		8BF544A6232F94AC00845DC7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF544A5232F94AC00845DC7 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8BF544A1232F645A00845DC7 /* gain_control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gain_control.h; sourceTree = "<group>"; };
 		8BF544A2232F653F00845DC7 /* AudioAgcProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioAgcProcess.h; sourceTree = "<group>"; };
 		8BF544A3232F653F00845DC7 /* AudioAgcProcess.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioAgcProcess.mm; sourceTree = "<group>"; };
+		8BF544A5232F94AC00845DC7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF544A6232F94AC00845DC7 /* MediaPlayer.framework in Frameworks */,
 				8BF54497232F3EB300845DC7 /* libAgAGC.a in Frameworks */,
 				8B5B8C38232A2124009BE7E2 /* AVFoundation.framework in Frameworks */,
 				8B5B8C36232A1897009BE7E2 /* AudioToolbox.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		8B5B8C34232A1896009BE7E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BF544A5232F94AC00845DC7 /* MediaPlayer.framework */,
 				8B5B8C37232A2124009BE7E2 /* AVFoundation.framework */,
 				8B5B8C35232A1897009BE7E2 /* AudioToolbox.framework */,
 			);

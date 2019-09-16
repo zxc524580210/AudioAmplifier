@@ -38,24 +38,13 @@
                                     <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XF8-x4-3wP"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jtx-fn-VVv">
-                                <rect key="frame" x="18" y="508" width="378" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="M8v-EJ-cmD"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="value_change:" destination="BYZ-38-t0r" eventType="valueChanged" id="LxG-8l-Efg"/>
-                                </connections>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m8v-cY-XH9" firstAttribute="width" secondItem="JzP-3W-yGs" secondAttribute="width" id="4PP-Qy-oxp"/>
                             <constraint firstItem="JzP-3W-yGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="7Uq-u9-e5K"/>
                             <constraint firstItem="m8v-cY-XH9" firstAttribute="height" secondItem="JzP-3W-yGs" secondAttribute="height" id="9cP-Sn-QWC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jtx-fn-VVv" secondAttribute="bottom" constant="324" id="Zsl-zp-c1b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m8v-cY-XH9" secondAttribute="trailing" constant="40" id="aKh-FJ-GML"/>
-                            <constraint firstItem="Jtx-fn-VVv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="npM-ab-8Aa"/>
                             <constraint firstItem="m8v-cY-XH9" firstAttribute="centerY" secondItem="JzP-3W-yGs" secondAttribute="centerY" id="pwf-Ff-QaV"/>
                             <constraint firstItem="JzP-3W-yGs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="305" id="vIm-cj-taS"/>
                         </constraints>

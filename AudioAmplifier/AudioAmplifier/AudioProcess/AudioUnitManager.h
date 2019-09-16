@@ -38,6 +38,7 @@ public:
     virtual void Initialize(Float64 sample_rate);
     virtual void Uninitialize();
     virtual void adjustAudioGainLevel(float level);
+    virtual void adjustVolume(float volume);
 private:
     std::unique_ptr<VoiceProcessingAudioUnit> audio_unit_;
     std::unique_ptr<AudioCircularBuffer<int16_t>> audioBuf;

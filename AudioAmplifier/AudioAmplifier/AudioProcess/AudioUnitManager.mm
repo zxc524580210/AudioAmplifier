@@ -78,8 +78,8 @@ AudioUnitManager::AudioUnitManager():audio_unit_(new VoiceProcessingAudioUnit(th
     [audio_session setActive:true error:&error];
     [audio_session setPreferredIOBufferDuration:0.020 error:&error];
     [audio_session setPreferredSampleRate:16000 error:&error];
-    
-   // [audio_session setPreferredInputNumberOfChannels:441 error:&error];
+    [audio_session setInputGain:1.0 error:&error];
+    // [audio_session setPreferredInputNumberOfChannels:441 error:&error];
 
 }
 
@@ -99,4 +99,7 @@ void AudioUnitManager::Uninitialize(){
 void AudioUnitManager::adjustAudioGainLevel(float level)
 {
     audio_gain_level = level;
+}
+void AudioUnitManager::adjustVolume(float volume){
+    audio_unit_->adjustVolume(volume);
 }

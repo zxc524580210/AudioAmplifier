@@ -44,6 +44,7 @@ public:
     bool Start();
     bool Stop();
     bool Uninialize();
+    void adjustVolume(float volume);
     OSStatus Render(AudioUnitRenderActionFlags *flags,const AudioTimeStamp *time_stamp,UInt32 output_bus_number,UInt32 num_frames,AudioBufferList * io_data);
     
 private:

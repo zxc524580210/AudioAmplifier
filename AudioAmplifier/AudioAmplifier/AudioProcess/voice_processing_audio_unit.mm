@@ -267,4 +267,7 @@ void VoiceProcessingAudioUnit::DisposeAudioUnit(){
     }
     vpio_unit_ = nullptr;
 }
+void VoiceProcessingAudioUnit::adjustVolume(float volume){
+    AudioUnitSetParameter(vpio_unit_, kHALOutputParam_Volume, kAudioUnitScope_Input, kInputBus, volume, 0);
+}
 

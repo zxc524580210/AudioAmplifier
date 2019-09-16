@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "AudioUnitManager.h"
+#import "MediaPlayer/MediaPlayer.h"
 @interface ViewController ()
 @property(atomic)AudioUnitManager *manager;
+@property(nonatomic, strong) MPMusicPlayerController * musicController;
 @end
 
 @implementation ViewController
@@ -22,7 +24,7 @@
 }
 - (IBAction)value_change:(UISlider *)sender {
     
-    _manager->adjustAudioGainLevel(sender.value);
+    _musicController.volume =  sender.value;
     
 }
 
@@ -31,7 +33,7 @@
     // Do any additional setup after loading the view.
     _manager = new AudioUnitManager();
     _manager->Initialize(16000);
-    
+    _musicController = [MPMusicPlayerController applicationMusicPlayer];
 }
 -(void)dealloc{
     _manager->Uninitialize();
