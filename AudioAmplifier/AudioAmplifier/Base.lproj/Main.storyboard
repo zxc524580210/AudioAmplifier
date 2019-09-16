@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzP-3W-yGs">
+                                <rect key="frame" x="37" y="349" width="89" height="70"/>
+                                <color key="backgroundColor" red="0.50102909193167" green="1" blue="0.3795172752585998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PDg-gU-aOQ"/>
+                                    <constraint firstAttribute="width" constant="89" id="hIe-bj-86J"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKW-GI-zOX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8v-cY-XH9">
+                                <rect key="frame" x="285" y="349" width="89" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.99382751810186387" blue="0.25144960916198811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XF8-x4-3wP"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jtx-fn-VVv">
+                                <rect key="frame" x="18" y="508" width="378" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="M8v-EJ-cmD"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="value_change:" destination="BYZ-38-t0r" eventType="valueChanged" id="LxG-8l-Efg"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m8v-cY-XH9" firstAttribute="width" secondItem="JzP-3W-yGs" secondAttribute="width" id="4PP-Qy-oxp"/>
+                            <constraint firstItem="JzP-3W-yGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="7Uq-u9-e5K"/>
+                            <constraint firstItem="m8v-cY-XH9" firstAttribute="height" secondItem="JzP-3W-yGs" secondAttribute="height" id="9cP-Sn-QWC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jtx-fn-VVv" secondAttribute="bottom" constant="324" id="Zsl-zp-c1b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m8v-cY-XH9" secondAttribute="trailing" constant="40" id="aKh-FJ-GML"/>
+                            <constraint firstItem="Jtx-fn-VVv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="npM-ab-8Aa"/>
+                            <constraint firstItem="m8v-cY-XH9" firstAttribute="centerY" secondItem="JzP-3W-yGs" secondAttribute="centerY" id="pwf-Ff-QaV"/>
+                            <constraint firstItem="JzP-3W-yGs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="305" id="vIm-cj-taS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
